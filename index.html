@@ -18,32 +18,48 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script type="text/javascript" src="ajax.js"></script>
 
-<!-- DATA TABLE -->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
-
-<body>
-    <div class="mx-auto mt-5" style="width: 400px;">
-        <fieldset class="bg-dark p-4 text-white" style="border-radius: 10px;">
-            <h1 style="font-family: Arial-black;">CLIENTS</h1>
-            <div class="form-group-sm">
-                <label for="client_id">Id</label>
-                <input type="number" class="form-control mb-2" id="client_id" placeholder="Enter client Id">
-
-                <label for="client_name">Name</label>
-                <input type="text" class="form-control mb-2" id="client_name" placeholder="Enter client name">
-
-                <label for="client_email">Email</label>
-                <input type="email" class="form-control mb-2" id="client_email" placeholder="Enter client email">
-
-                <label for="client_age">Age</label>
-                <input type="number" class="form-control mb-2" id="client_age" placeholder="Enter client age">
-
-                <button onclick="createClient();" class="mt-2 btn btn-primary">Save</button>
-                <button onclick="getClients();" class="mt-2 btn btn-primary">Clients</button>
+<body class="bg-secondary">
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="mt-5 sm" style="width: 400px;">
+                <fieldset class="bg-dark p-4 text-white" style="border-radius: 10px;">
+                    <h1 style="font-family: Arial-black;">CLIENTS</h1>
+                    <div class="form-group-sm">
+                        <label for="client_id">Id</label>
+                        <input type="number" class="form-control mb-2" id="client_id" placeholder="Enter client Id">
+        
+                        <label for="client_name">Name</label>
+                        <input type="text" class="form-control mb-2" id="client_name" placeholder="Enter client name">
+        
+                        <label for="client_email">Email</label>
+                        <input type="email" class="form-control mb-2" id="client_email" placeholder="Enter client email">
+        
+                        <label for="client_age">Age</label>
+                        <input type="number" class="form-control mb-2" id="client_age" placeholder="Enter client age">
+        
+                        <button onclick="createClient();" class="mt-2 btn btn-primary">Save</button>
+                        <button onclick="getClients();" class="mt-2 btn btn-primary">Clients</button>
+                    </div>
+                </fieldset>
             </div>
-        </fieldset>
-    </div>
+          </div>
+          <div class="col-l">
+            <table id="client_table" class="table table-striped table-dark mt-5 float-right">
+                <thead>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>AGE</th>
+                    <th>ACTIONS</th>
+                </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    
+
+    
 
 </body>
 
