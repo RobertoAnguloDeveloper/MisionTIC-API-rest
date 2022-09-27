@@ -38,8 +38,13 @@
                         <label for="client_age">Age</label>
                         <input type="number" class="form-control mb-2" id="client_age" placeholder="Enter client age">
         
-                        <button onclick="createClient();" class="mt-2 btn btn-primary">Save</button>
-                        <button onclick="getClients();" class="mt-2 btn btn-primary">Clients</button>
+                        <div class="container">
+                            <div class="row">
+                                <button onclick="createClient();" class="col-sm-3 mt-2 btn btn-primary">Save</button>
+                                <button onclick="getClients();" class="col-sm-3 mt-2 btn btn-primary" style="margin-left: 50%;">Clients</button>
+                            </div>
+                            
+                        </div>
                     </div>
                 </fieldset>
             </div>
@@ -49,9 +54,9 @@
                 <thead>
                     <th>ID</th>
                     <th>NAME</th>
-                    <th>EMAIL</th>
+                    <th class="text-center">EMAIL</th>
                     <th>AGE</th>
-                    <th>ACTIONS</th>
+                    <th class="text-center">ACTIONS</th>
                 </thead>
             </table>
           </div>
