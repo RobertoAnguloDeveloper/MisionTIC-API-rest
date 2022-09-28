@@ -63,8 +63,91 @@
         </div>
       </div>
     
+      <!-- BOX TABLE -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="mt-5 sm" style="width: 400px;">
+                <fieldset class="bg-dark p-4 text-white" style="border-radius: 10px;">
+                    <h1 style="font-family: Arial-black;">BOXES</h1>
+                    <div class="form-group-sm">
+                        <label for="box_id">Id</label>
+                        <input type="number" class="form-control mb-2" id="box_id" placeholder="Enter box Id">
+        
+                        <label for="box_location">Location</label>
+                        <input type="text" class="form-control mb-2" id="box_location" placeholder="Enter box location">
+        
+                        <label for="box_capacity">Capacity</label>
+                        <input type="number" class="form-control mb-2" id="box_capacity" placeholder="Enter box capacity">
+        
+                        <label for="box_category_id">Category id</label>
+                        <input type="number" class="form-control mb-2" id="box_category_id" placeholder="Enter box category id">
 
+                        <label for="box_name">Name</label>
+                        <input type="text" class="form-control mb-2" id="box_name" placeholder="Enter box name">
+        
+                        <div class="container">
+                            <div class="row">
+                                <button onclick="createBox();" class="col-sm-3 mt-2 btn btn-primary">Save</button>
+                                <button onclick="getBoxes();" class="col-sm-3 mt-2 btn btn-primary" style="margin-left: 50%;">Boxes</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+          </div>
+          <div class="col-l">
+            <table id="box_table" class="table table-striped table-dark mt-5 float-right">
+                <thead>
+                    <th>ID</th>
+                    <th>LOCATION</th>
+                    <th>CAPACITY</th>
+                    <th>CATEGORY ID</th>
+                    <th>NAME</th>
+                    <th class="text-center">ACTIONS</th>
+                </thead>
+            </table>
+          </div>
+        </div>
+      </div>
     
+      <!-- MESSAGE TABLE -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="mt-5 sm" style="width: 400px;">
+                <fieldset class="bg-dark p-4 text-white" style="border-radius: 10px;">
+                    <h1 style="font-family: Arial-black;">MESSAGES</h1>
+                    <div class="form-group-sm">
+                        <label for="message_id">Id</label>
+                        <input type="number" class="form-control mb-2" id="message_id" placeholder="Enter message Id">
+        
+                        <label for="message_messagetext">Messagetext</label>
+                        <input type="text" class="form-control mb-2" id="message_messagetext" placeholder="Enter message messagetext">
+        
+                        <div class="container">
+                            <div class="row">
+                                <button onclick="createMessage();" class="col-sm-3 mt-2 btn btn-primary">Save</button>
+                                <button onclick="getMessages();" class="col-sm-3 mt-2 btn btn-primary" style="margin-left: 50%;">Boxes</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+          </div>
+          <div class="col-l">
+            <table id="message_table" class="table table-striped table-dark mt-5 float-right">
+                <thead>
+                    <th>ID</th>
+                    <th>MESSAGETEXT</th>
+                    <th class="text-center">ACTIONS</th>
+                </thead>
+            </table>
+          </div>
+        </div>
+      </div>
 
 </body>
 
